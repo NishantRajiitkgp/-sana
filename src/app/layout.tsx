@@ -1,0 +1,37 @@
+import type { Metadata } from "next";
+import { Cormorant_Garamond, Outfit } from "next/font/google";
+import "./globals.css";
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "āsana — Yoga Studio in Orléans",
+  description:
+    "A warm, inclusive space to move, breathe, and grow your practice. Discover yoga classes in Orléans, France.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${cormorant.variable} ${outfit.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  );
+}

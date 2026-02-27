@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg-primary: #2A1F14;
+  --color-bg-card: #362A1E;
+  --color-bg-footer: #231A10;
+  --color-text-primary: #F5EBDB;
+  --color-text-secondary: #9C8C78;
+  --color-text-tertiary: #7A6C5A;
+  --color-divider: #4A3A2A;
+  --color-accent-cream: #F5EBDB;
+
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-outfit);
+}
+
+/* Scroll reveal animation */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2A1F14;
+  color: #F5EBDB;
+  font-family: var(--font-outfit), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation backdrop blur */
+.nav-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hero gradient overlay */
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 31, 20, 0.3) 0%,
+    rgba(42, 31, 20, 0.1) 40%,
+    rgba(42, 31, 20, 0.5) 70%,
+    rgba(42, 31, 20, 0.85) 100%
+  );
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #2A1F14;
+}
+::-webkit-scrollbar-thumb {
+  background: #4A3A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A6C5A;
+}
