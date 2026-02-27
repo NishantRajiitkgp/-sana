@@ -85,7 +85,7 @@ export const CTA = {
   images: [
     "https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&q=80",
     "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80",
-    "https://images.unsplash.com/photo-1573590330099-d8c4dabdca8a?w=600&q=80",
+    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
     "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&q=80",
   ],
 };
